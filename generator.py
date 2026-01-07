@@ -43,7 +43,12 @@ def read_file_generator(filename):
 
 # Excercise 4
 def search(sequence, target):
-    for value in sequence:
-        if value == target:
-            return True
-        return False
+    for item in sequence:
+        if isinstance(item, int):
+            if item == target:
+                return True
+        elif isinstance(item, str):
+            number = int(item.strip().split()[-1])
+            if number == target:
+                return True
+    return False
