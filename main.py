@@ -12,8 +12,11 @@ def main():
     test_electric_vehicle()
     print("----------Method avancees generators-------")
     test_generator_ex1()
+    print("-----------------")
     test_generator_ex2()
+    print("-----------------")
     test_generator_ex3()
+    print("-----------------")
     test_generator_ex4()
 
 
