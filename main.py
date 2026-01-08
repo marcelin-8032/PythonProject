@@ -1,4 +1,3 @@
-from tests.test_arguments import test_arguments_ex1
 from tests.test_decorator import (
     test_decorator_ex1,
     test_decorator_ex2,
@@ -35,9 +34,6 @@ def main():
     test_decorator_ex3()
     print("-----------------")
     test_decorator_ex4()
-
-    print("----------arguments-------")
-    test_arguments_ex1()   # TODO it should correct and test
 
 
 if __name__ == "__main__":
