@@ -9,8 +9,7 @@ def mesure_execution_time(func):
         start = time.perf_counter()
         result = func(*args, **kwargs)
         end = time.perf_counter()
-        print(f"the function '{func.__name__}'"
-              f"executed in {end-start:.6f} seconds")
+        print(f"the function '{func.__name__}'" f"executed in {end-start:.6f} seconds")
         return result
 
     return wrapper
@@ -50,10 +49,7 @@ def deprecated(message=None):
                 f"it should not be used anymore"
             )
 
-            warnings.warn(
-                warning_message,
-                category=DeprecationWarning,
-                stacklevel=2)
+            warnings.warn(warning_message, category=DeprecationWarning, stacklevel=2)
 
             return func(*args, **kwargs)
 
