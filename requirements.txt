@@ -3,3 +3,9 @@ flake8
 pytest
 ruff
 mypy
+pyprof2calltree
+graphviz
+snakeviz
+pyinstrument
+memory_profiler
+matplotlib
